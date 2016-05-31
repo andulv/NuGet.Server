@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +54,14 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="DataServices\IgnoreCaseForPackageIdInterceptor.cs" />
+    <Compile Include="DataServices\NormalizeVersionInterceptor.cs" />
+    <Compile Include="DataServices\ODataPackage.cs" />
+    <Compile Include="DataServices\PackageContext.cs" />
+    <Compile Include="DataServices\PackageExtensions.cs" />
+    <Compile Include="DataServices\QueryableExtensions.cs" />
+    <Compile Include="DataServices\QueryTranslator.cs" />
+    <Compile Include="DataServices\QueryTranslatorProvider.cs" />
     <Compile Include="Infrastructure\IServerPackageRepository.cs" />
     <Compile Include="Infrastructure\PackageDerivedData.cs" />
     <Compile Include="Infrastructure\SemanticVersionJsonConverter.cs" />
@@ -70,7 +79,9 @@
     <Compile Include="Core\SemanticVersionExtensions.cs" />
     <Compile Include="Core\Helpers.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
