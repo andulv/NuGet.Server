@@ -153,6 +153,12 @@
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NuGet.Server.Base\NuGet.Server.Base.csproj">
+      <Project>{2d5b89ff-393f-418b-a0c6-2dd36bb1cd54}</Project>
+      <Name>NuGet.Server.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(OS)' == 'Windows_NT'">
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
