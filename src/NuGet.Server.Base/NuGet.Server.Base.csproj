@@ -53,6 +53,10 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Infrastructure\IServerPackageRepository.cs" />
+    <Compile Include="Infrastructure\PackageDerivedData.cs" />
+    <Compile Include="Infrastructure\SemanticVersionJsonConverter.cs" />
+    <Compile Include="Infrastructure\ServerPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Logging\ConsoleLogger.cs" />
     <Compile Include="Logging\NullLogger.cs" />
