@@ -7,3 +7,4 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("NuGet.Server.Base")]
 [assembly: AssemblyDescription("Class library used to host a simple NuGet feed")]
 [assembly: InternalsVisibleTo("NuGet.Server.Tests")]
+[assembly: InternalsVisibleTo("NuGet.Server")]

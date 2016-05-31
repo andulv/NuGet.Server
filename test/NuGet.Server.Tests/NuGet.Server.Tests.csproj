@@ -81,6 +81,10 @@
     <Compile Include="ServerPackageRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\NuGet.Server.Base\NuGet.Server.Base.csproj">
+      <Project>{2d5b89ff-393f-418b-a0c6-2dd36bb1cd54}</Project>
+      <Name>NuGet.Server.Base</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\NuGet.Server\NuGet.Server.csproj">
       <Project>{793B20A9-E263-4B54-BB31-305B602087CE}</Project>
       <Name>NuGet.Server</Name>

@@ -73,32 +73,21 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Core\Constants.cs" />
     <Compile Include="Core\DefaultServiceResolver.cs" />
-    <Compile Include="Core\FrameworkNameExtensions.cs" />
-    <Compile Include="Core\IServiceResolver.cs" />
-    <Compile Include="Core\PackageExtensions.cs" />
+    <Compile Include="Core\ServiceResolver.cs" />
     <Compile Include="DataServices\IgnoreCaseForPackageIdInterceptor.cs" />
     <Compile Include="DataServices\ODataPackage.cs" />
     <Compile Include="DataServices\PackageContext.cs" />
     <Compile Include="DataServices\PackageExtensions.cs" />
     <Compile Include="DataServices\NormalizeVersionInterceptor.cs" />
-    <Compile Include="Core\ServiceResolver.cs" />
     <Compile Include="Infrastructure\JsonNetPackagesSerializer.cs" />
     <Compile Include="Infrastructure\IPackagesSerializer.cs" />
     <Compile Include="Infrastructure\IServerPackageStore.cs" />
     <Compile Include="Infrastructure\PackageDerivedData.cs" />
     <Compile Include="Infrastructure\SemanticVersionJsonConverter.cs" />
     <Compile Include="Infrastructure\ServerPackageStore.cs" />
-    <Compile Include="Logging\ConsoleLogger.cs" />
-    <Compile Include="Logging\NullLogger.cs" />
-    <Compile Include="Logging\ILogger.cs" />
-    <Compile Include="Logging\LogLevel.cs" />
-    <Compile Include="Core\SemanticVersionExtensions.cs" />
-    <Compile Include="Logging\TraceLogger.cs" />
     <Compile Include="Publishing\IPackageService.cs" />
     <Compile Include="Publishing\PackageService.cs" />
-    <Compile Include="Core\Helpers.cs" />
     <Compile Include="Infrastructure\IPackageAuthenticationService.cs" />
     <Compile Include="Infrastructure\IServerPackageRepository.cs" />
     <Compile Include="Infrastructure\PackageAuthenticationService.cs" />
