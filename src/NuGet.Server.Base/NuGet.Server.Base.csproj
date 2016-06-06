@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Web.XmlTransform">
+      <HintPath>..\..\packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -42,18 +46,17 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Services.Client" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Core\FrameworkNameExtensions.cs" />
+    <Compile Include="Core\PackageExtensions.cs" />
     <Compile Include="DataServices\IgnoreCaseForPackageIdInterceptor.cs" />
     <Compile Include="DataServices\NormalizeVersionInterceptor.cs" />
     <Compile Include="DataServices\ODataPackage.cs" />
@@ -78,10 +81,6 @@
     <Compile Include="Logging\LogLevel.cs" />
     <Compile Include="Logging\TraceLogger.cs" />
     <Compile Include="Core\Constants.cs" />
-    <Compile Include="Core\FrameworkNameExtensions.cs" />
-    <Compile Include="Core\IServiceResolver.cs" />
-    <Compile Include="Core\PackageExtensions.cs" />
-    <Compile Include="Core\SemanticVersionExtensions.cs" />
     <Compile Include="Core\Helpers.cs" />
     <Compile Include="Strings.Designer.cs" />
   </ItemGroup>
